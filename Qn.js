@@ -2,17 +2,15 @@
 
 function removeEveryOther(arr) {
     //your code here
-    let render = ''
+    let render = []
 
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i+=2) {
         let item = arr[i]
-        
-         if (item % 2 === 0) {
-            render += item
+        render.push(item)
         }
+        return render
     }
-    return render
-}
+
 
 console.log(removeEveryOther(['ewf','remove','weufh','remove','weiohf']));
 
